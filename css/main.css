@@ -1,0 +1,66 @@
+/* CSS Document */
+body{
+	overflow: hidden;
+	max-height: 100%;
+}
+
+.on-top{
+	position: relative;
+	top: -90%;
+}
+
+.container{
+	font-family: 'Ubuntu', sans-serif;
+	color: white;
+}
+
+.hello{
+	font-weight: 500;
+	font-size: 255px;
+}
+
+.letter{
+	margin: 0 0 0 -75px;
+	padding: 0;
+}
+
+.highlight{
+	transition: all .3s ease-in-out;
+}
+
+.highlight:hover{
+	color: #ff1673;
+	transition: all .3s ease-in-out;
+}
+
+.my-name{
+	font-weight: 400;
+	font-size: 75px;
+	margin-top: -45px;
+}
+
+.row a{
+	color: white;
+}
+
+.icons{
+	font-size: 50px;
+	margin-top: 20px;
+}
+
+.icon{
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.annotation, .quote{
+	position: relative;
+	display: inline-block;
+	font-size: 35px;
+	margin-top: 10px;
+	transition: all .3s ease-in-out;
+}
+
+.quote{
+	margin-top: -35px;
+}
