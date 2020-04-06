@@ -1,6 +1,6 @@
 /* CSS Document */
 body{
-	overflow: hidden;
+	overflow-x: hidden;
 	max-height: 100%;
 }
 
@@ -14,53 +14,168 @@ body{
 	color: white;
 }
 
-.hello{
-	font-weight: 500;
-	font-size: 255px;
-}
-
-.letter{
-	margin: 0 0 0 -75px;
-	padding: 0;
-}
-
 .highlight{
 	transition: all .3s ease-in-out;
 }
 
 .highlight:hover{
 	color: #ff1673;
-	transition: all .3s ease-in-out;
-}
-
-.my-name{
-	font-weight: 400;
-	font-size: 75px;
-	margin-top: -45px;
+	transition: all .25s ease-in-out;
 }
 
 .row a{
 	color: white;
 }
 
-.icons{
-	font-size: 50px;
-	margin-top: 20px;
+.quote{
+	margin-top: -35px;
 }
 
-.icon{
-	margin-right: 15px;
-	margin-left: 15px;
+.hello {
+	font-weight: 500;
+	font-size: 90px;
+	text-align: center;
 }
 
-.annotation, .quote{
+.letter {
+	margin: 0 0 0 -30px;
+	padding: 0;
+}
+
+.my-name {
+	font-weight: 400;
+	font-size: 35px;
+	margin-top: -10px;
+	text-align: center;
+}
+
+.annotation, .quote {
 	position: relative;
 	display: inline-block;
-	font-size: 35px;
+	font-size: 25px;
 	margin-top: 10px;
 	transition: all .3s ease-in-out;
 }
 
-.quote{
-	margin-top: -35px;
+.icons {
+	font-size: 40px;
+	margin-top: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.icon {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.icon-description {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+@media (min-width: 576px) {
+	.hello {
+		font-weight: 500;
+		font-size: 160px;
+		text-align: left;
+	}
+
+	.letter {
+		margin: 0 0 0 -50px;
+		padding: 0;
+	}
+
+	.my-name {
+		font-weight: 400;
+		font-size: 40px;
+		margin-top: -30px;
+		text-align: right;
+	}
+
+	.annotation, .quote {
+		position: relative;
+		display: inline-block;
+		font-size: 30px;
+		margin-top: 10px;
+		transition: all .3s ease-in-out;
+	}
+
+	.icons {
+		font-size: 40px;
+		margin-top: 30px;
+	}
+
+	.icon {
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
+	.icon-description {
+		display: none;
+	}
+}
+
+/*Средние девайсы («таблетки», >= 768px)*/
+@media (min-width: 768px) {
+	.hello {
+		font-weight: 500;
+		font-size: 200px;
+	}
+
+	.letter {
+		margin: 0 0 0 -60px;
+		padding: 0;
+	}
+
+	.my-name {
+		font-weight: 400;
+		font-size: 45px;
+		margin-top: -45px;
+	}
+
+	.annotation, .quote {
+		position: relative;
+		display: inline-block;
+		font-size: 30px;
+		margin-top: 10px;
+		transition: all .3s ease-in-out;
+	}
+
+	.icons {
+		font-size: 50px;
+		margin-top: 20px;
+	}
+
+	.icon {
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+}
+
+/*Большие девайсы (десктопы, >= 992px)*/
+@media (min-width: 992px) {
+	.hello {
+		font-weight: 500;
+		font-size: 255px;
+	}
+
+	.letter {
+		margin: 0 0 0 -75px;
+		padding: 0;
+	}
+
+	.my-name {
+		font-weight: 400;
+		font-size: 75px;
+		margin-top: -45px;
+	}
+
+	.annotation, .quote {
+		position: relative;
+		display: inline-block;
+		font-size: 35px;
+		margin-top: 10px;
+		transition: all .3s ease-in-out;
+	}
 }
